@@ -102,7 +102,7 @@ const ModalRegister = () => {
                   <Form.Label>Nombre y Apellido</Form.Label>
                   <InputGroup>
                   <InputGroup.Text id="groupEmail">
-                  <i class="bi bi-person"></i>
+                  <i className="bi bi-person"></i>
                 </InputGroup.Text>
                   <Form.Control
                     type="text"
@@ -124,7 +124,7 @@ const ModalRegister = () => {
                   <Form.Label>Email</Form.Label>
                   <InputGroup>
                   <InputGroup.Text>
-                  <i class="bi bi-envelope-at"></i>
+                  <i className="bi bi-envelope-at"></i>
                   </InputGroup.Text>
 
                   <Form.Control
@@ -147,7 +147,7 @@ const ModalRegister = () => {
               <InputGroup>
                 <InputGroup.Text id="groupEmail">
                   <>
-                    <i class="bi bi-telephone"></i>
+                    <i className="bi bi-telephone"></i>
                   </>
                 </InputGroup.Text>
                 <Form.Control
@@ -175,7 +175,7 @@ const ModalRegister = () => {
                     <Form.Label>Contraseña</Form.Label>
                 <InputGroup className="mb-3">
                   <InputGroup.Text>
-                  <i class="bi bi-shield-lock-fill"></i>
+                  <i className="bi bi-shield-lock-fill"></i>
                   </InputGroup.Text>
                     <Form.Control
                       type={!viewPass ? "password" : "text"}
@@ -200,7 +200,7 @@ const ModalRegister = () => {
                     <Form.Label>Repetir Contraseña</Form.Label>
                 <InputGroup className="mb-3">
                 <InputGroup.Text>
-                  <i class="bi bi-shield-lock-fill"></i>
+                  <i className="bi bi-shield-lock-fill"></i>
                   </InputGroup.Text>
                     <Form.Control
                       type={!viewrPass ? "password" : "text"}

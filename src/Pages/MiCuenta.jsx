@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
-
+import Spinner from 'react-bootstrap/Spinner'
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
@@ -75,8 +75,12 @@ const MiCuenta = () => {
               {Object.keys(userInfo).length > 0 ? (
                   <MiCuentaComp userInfo={userInfo} />
                 ) : (
-                  // Muestra un indicador de carga u otro contenido mientras se carga userInfo
+                  <div className="d-flex">
+                  <Spinner animation="border" role="status">
+                  <span className="visually-hidden">Loading...</span>
+                </Spinner>
                   <p>Cargando información del usuario...</p>
+                  </div>
                 )}
               </Tab.Pane>
               <Tab.Pane eventKey="second">Second tab content</Tab.Pane>

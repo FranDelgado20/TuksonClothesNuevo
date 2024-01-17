@@ -79,7 +79,7 @@ const ModalLogin = ({saveToken}) => {
                   <Form.Label>Correo electrónico</Form.Label>
                   <InputGroup>
                   <InputGroup.Text>
-                  <i class="bi bi-envelope-at"></i>
+                  <i className="bi bi-envelope-at"></i>
                   </InputGroup.Text>
                   <Form.Control
                     type="email"
@@ -100,7 +100,7 @@ const ModalLogin = ({saveToken}) => {
                     <Form.Label>Contraseña</Form.Label>
                 <InputGroup className="mb-3">
                 <InputGroup.Text>
-                  <i class="bi bi-shield-lock-fill"></i>
+                  <i className="bi bi-shield-lock-fill"></i>
                   </InputGroup.Text>
                     <Form.Control
                       type={!viewPass ? "password" : "text"}

@@ -22,3 +22,11 @@ export const errorAccountEdit = yup.object().shape({
     // zip: yup.string().required('Este campo es OBLIGATORIO'),
     // city: yup.string().required('Este campo es OBLIGATORIO'),
 })
+export const errorCreateProduct = yup.object().shape({
+    name: yup.string().required('Este campo es OBLIGATORIO'),
+    price: yup.number().required('Este campo es OBLIGATORIO').positive('El precio debe ser un valor positivo'),
+    model: yup.string().required('Este campo es OBLIGATORIO'),
+    idProd: yup.string().required('Este campo es OBLIGATORIO'),
+    size: yup.string().required('Este campo es OBLIGATORIO'),
+    stock: yup.number().required('Este campo es OBLIGATORIO').positive('El stock debe ser un valor positivo'),
+})

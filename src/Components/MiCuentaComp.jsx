@@ -90,7 +90,7 @@ const MiCuentaComp = ({ userInfo }) => {
               <Form.Label>Nombre y Apellido</Form.Label>
               <InputGroup>
                 <InputGroup.Text id="groupEmail">
-                  <i class="bi bi-person"></i>
+                  <i className="bi bi-person"></i>
                 </InputGroup.Text>
                 <Form.Control
                   defaultValue={userInfo.fullName}
@@ -128,7 +128,7 @@ const MiCuentaComp = ({ userInfo }) => {
               <Form.Label>Ciudad</Form.Label>
               <InputGroup>
                 <InputGroup.Text id="groupEmail">
-                  <i class="bi bi-geo-alt"></i>
+                  <i className="bi bi-geo-alt"></i>
                 </InputGroup.Text>
                 <Form.Select
                   aria-label="Default select example"
@@ -181,7 +181,7 @@ const MiCuentaComp = ({ userInfo }) => {
               <Form.Label>Código Postal</Form.Label>
               <InputGroup>
                 <InputGroup.Text id="groupEmail">
-                  <i class="bi bi-geo-alt"></i>
+                  <i className="bi bi-geo-alt"></i>
                 </InputGroup.Text>
                 <Form.Control
                   type="text"
@@ -207,7 +207,7 @@ const MiCuentaComp = ({ userInfo }) => {
               <Form.Label>Domicilio</Form.Label>
               <InputGroup>
                 <InputGroup.Text id="groupEmail">
-                  <i class="bi bi-pin-map"></i>
+                  <i className="bi bi-pin-map"></i>
                 </InputGroup.Text>
                 <Form.Control
                   type="text"
@@ -227,7 +227,7 @@ const MiCuentaComp = ({ userInfo }) => {
               <InputGroup>
                 <InputGroup.Text id="groupEmail">
                   <>
-                    <i class="bi bi-telephone"></i>
+                    <i className="bi bi-telephone"></i>
                   </>
                 </InputGroup.Text>
                 <Form.Control

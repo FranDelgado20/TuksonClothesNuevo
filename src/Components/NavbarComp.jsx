@@ -75,16 +75,11 @@ const NavbarComp = () => {
         ) : token && role === "admin" ? (
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <NavLinkItem to={"/"} name={"Inicio"} />
+              <NavLinkItem to={"/admin"} name={"Inicio"} />
 
               <NavLinkItem to={"/productos"} name={"Productos"} />
             </Nav>
-            <Nav>
-              <div className="me-5">
-                <ModalLogin />
-              </div>
-              <ModalRegister />
-            </Nav>
+           
           </Navbar.Collapse>
         ) : (
           <Navbar.Collapse id="basic-navbar-nav">

@@ -5,6 +5,7 @@ import SobreNosotros from "../Pages/SobreNosotros";
 import Productos from "../Pages/Productos";
 import MiCuenta from "../Pages/MiCuenta";
 import PrivateRoutes from "../Components/PrivateRoute";
+import AdminPage from "../Pages/AdminPage";
 
 const RoutesViews = () => {
   return (
@@ -17,6 +18,14 @@ const RoutesViews = () => {
         element={
           <PrivateRoutes role={"user"}>
             <MiCuenta />
+          </PrivateRoutes>
+        }
+      />
+      <Route
+        path="/admin"
+        element={
+          <PrivateRoutes role={"admin"}>
+            <AdminPage />
           </PrivateRoutes>
         }
       />
