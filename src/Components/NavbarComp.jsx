@@ -79,7 +79,14 @@ const NavbarComp = () => {
 
               <NavLinkItem to={"/productos"} name={"Productos"} />
             </Nav>
-           
+           <Nav>
+           <button
+                  onClick={logOut}
+                  className="bg-black mx-4 navbarLink button_slide slide_down"
+                >
+                  <i className="bi bi-door-open-fill"></i> Cerrar Sesión
+                </button>
+           </Nav>
           </Navbar.Collapse>
         ) : (
           <Navbar.Collapse id="basic-navbar-nav">
