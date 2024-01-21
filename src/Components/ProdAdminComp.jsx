@@ -25,6 +25,9 @@ const ProdAdminComp = () => {
       });
     }
   };
+  const actualizarDatos = () => {
+    obtenerProductos()
+  }
   const eliminarProducto = async (id) => {
     try {
       const resDelete = await clienteAxios.delete(`/products/${id}`, config);
@@ -56,6 +59,7 @@ const ProdAdminComp = () => {
     <>
       <Container fluid>
         <ModalCrearProdComp />
+        <Button onClick={actualizarDatos}>Actualizar</Button>
         <Table striped bordered hover>
           <thead>
             <tr>

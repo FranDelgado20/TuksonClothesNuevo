@@ -16,15 +16,15 @@ const MiCuentaComp = ({ userInfo }) => {
   const [validated, setValidated] = useState(false);
   // const [userInfo, setUserInfo] = useState({});
   // console.log(userInfo);
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
+  // const handleSubmit = (event) => {
+  //   const form = event.currentTarget;
+  //   if (form.checkValidity() === false) {
+  //     event.preventDefault();
+  //     event.stopPropagation();
+  //   }
 
-    setValidated(true);
-  };
+  //   setValidated(true);
+  // };
 
  
   const editarUsuario = async (values) => {
