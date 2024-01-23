@@ -12,6 +12,7 @@ import clienteAxios from "../utils/axios";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import MiCuentaComp from "../Components/MiCuentaComp";
+import IMGComp from "../Components/IMGComp";
 const MiCuenta = () => {
   const [validated, setValidated] = useState(false);
   const [userInfo, setUserInfo] = useState({});
@@ -72,7 +73,9 @@ const MiCuenta = () => {
           <Col sm={9} className="text-white">
             <Tab.Content>
               <Tab.Pane eventKey="first">
+              <IMGComp/>
               {Object.keys(userInfo).length > 0 ? (
+                
                   <MiCuentaComp userInfo={userInfo} />
                 ) : (
                   <div className="d-flex">
